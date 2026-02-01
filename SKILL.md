@@ -1,5 +1,5 @@
 ---
-name: skill-stats
+name: skill-usage
 description: 统计已安装技能在指定时间段内的使用次数，以美观的 TUI 格式展示结果
 version: 1.0.0
 allowed-tools:
@@ -8,7 +8,7 @@ allowed-tools:
 model: haiku
 ---
 
-# 技能使用统计 (skill-stats)
+# 技能使用统计 (skill-usage)
 
 ## 技能概述
 
@@ -82,7 +82,7 @@ model: haiku
 当用户调用此技能时，请按以下步骤执行：
 
 1. 首先使用 `AskUserQuestion` 询问统计时间段
-2. 直接调用 `~/.claude/skills/skill-stats/stats.py` 脚本，传入时间段参数
+2. 直接调用 `~/.claude/skills/skill-usage/stats.py` 脚本，传入时间段参数
 3. **直接将脚本输出作为最终回复**，不要做任何额外处理或包装
 
 时间段参数映射：
@@ -96,7 +96,7 @@ model: haiku
 
 调用示例：
 ```bash
-python3 ~/.claude/skills/skill-stats/stats.py past_30_days
+python3 ~/.claude/skills/skill-usage/stats.py past_30_days
 ```
 
 4. **重要**：将统计报告直接作为最终回复输出给用户，不要只输出"统计完成"等简短描述

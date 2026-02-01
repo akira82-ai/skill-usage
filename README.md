@@ -1,4 +1,4 @@
-# skill-usage / skill-stats
+# skill-usage
 
 A Claude Code skill that tracks and displays usage statistics for your installed skills. View how often each skill is called with beautiful TUI visualizations.
 
@@ -11,14 +11,14 @@ A Claude Code skill that tracks and displays usage statistics for your installed
 
 ## Installation
 
-1. Clone this repository to `~/.claude/skills/skill-stats`:
+1. Clone this repository to `~/.claude/skills/skill-usage`:
 ```bash
-git clone https://github.com/agiray/skill-usage.git ~/.claude/skills/skill-stats
+git clone https://github.com/agiray/skill-usage.git ~/.claude/skills/skill-usage
 ```
 
 2. Ensure the Python script is executable:
 ```bash
-chmod +x ~/.claude/skills/skill-stats/stats.py
+chmod +x ~/.claude/skills/skill-usage/stats.py
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ chmod +x ~/.claude/skills/skill-stats/stats.py
 Invoke the skill from Claude Code:
 
 ```
-/skill-stats
+/skill-usage
 ```
 
 Then select your desired time period:
