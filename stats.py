@@ -122,8 +122,8 @@ def format_report(period: str, period_label: str, skill_counts: Dict[str, int]) 
     ]
 
     for rank, (skill, count) in enumerate(sorted_skills, 1):
-        if max_count > 0:
-            percentage = int((count / max_count) * 100)
+        if total > 0:
+            percentage = int((count / total) * 100)
         else:
             percentage = 0
         bar = "█" * (percentage // 10) + "░" * (10 - (percentage // 10))
